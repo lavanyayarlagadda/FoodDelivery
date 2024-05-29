@@ -1,0 +1,688 @@
+[
+    {
+      "info": {
+        "id": "27739",
+        "name": "Cafe Niloufer Classic",
+        "cloudinaryImageId": "1171b83d63d7c203e5f1c3e16980cd89",
+        "locality": "Oshiwara",
+        "areaName": "Red Hills",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+          "Bakery",
+          "Beverages",
+          "Snacks",
+          "Desserts"
+        ],
+        "avgRating": 3.6,
+        "parentId": "466854",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "10K+",
+        "sla": {
+          "deliveryTime": 35,
+          "lastMileTravel": 5.5,
+          "serviceability": "SERVICEABLE",
+          "slaString": "30-35 mins",
+          "lastMileTravelString": "5.5 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-14 00:30:00",
+          "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/cafe-niloufer-classic-oshiwara-red-hills-hyderabad-27739",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "info": {
+        "id": "579871",
+        "name": "Sri Mahalaxmi Reddy Brothers Tiffin Center",
+        "cloudinaryImageId": "ixdhdmfecmuei3lufgv0",
+        "locality": "Santosh Nagar Colony",
+        "areaName": "Mehdipatnam",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "South Indian",
+          "Chinese"
+        ],
+        "avgRating": 3.5,
+        "parentId": "347243",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "1K+",
+        "sla": {
+          "deliveryTime": 24,
+          "lastMileTravel": 2.5,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.5 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-13 22:30:00",
+          "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/sri-mahalaxmi-reddy-brothers-tiffin-center-santosh-nagar-colony-mehdipatnam-hyderabad-579871",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "info": {
+        "id": "22986",
+        "name": "Lakshman Ki Bandi",
+        "cloudinaryImageId": "kecvrvzdmvwkblcy4tuo",
+        "locality": "Ghoshamahal",
+        "areaName": "Nampally",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+          "South Indian"
+        ],
+        "avgRating": 3.0,
+        "veg": true,
+        "parentId": "19944",
+        "avgRatingString": "4.1",
+        "totalRatingsString": "10K+",
+        "sla": {
+          "deliveryTime": 31,
+          "lastMileTravel": 3.6,
+          "serviceability": "SERVICEABLE",
+          "slaString": "30-35 mins",
+          "lastMileTravelString": "3.6 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-13 16:30:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "v1695133679/badges/Pure_Veg111.png",
+              "description": "pureveg"
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {
+              "badgeObject": [
+                {
+                  "attributes": {
+                    "description": "pureveg",
+                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                  }
+                }
+              ]
+            },
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "aggregatedDiscountInfoV3": {
+          "header": "10% OFF",
+          "subHeader": "UPTO ₹40"
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/lakshman-ki-bandi-ghoshamahal-nampally-hyderabad-22986",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "info": {
+        "id": "27456",
+        "name": "Rambharose - Bhattad Ki Idli",
+        "cloudinaryImageId": "568af3b3862bc0bfdf0c30c18da08ff0",
+        "locality": "New Malakpet",
+        "areaName": "Attapur",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+          "South Indian",
+          "Snacks",
+          "Indian"
+        ],
+        "avgRating": 4.3,
+        "veg": true,
+        "parentId": "166509",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "10K+",
+        "sla": {
+          "deliveryTime": 24,
+          "lastMileTravel": 3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "3.0 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-13 23:00:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "v1695133679/badges/Pure_Veg111.png",
+              "description": "pureveg"
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {
+              "badgeObject": [
+                {
+                  "attributes": {
+                    "description": "pureveg",
+                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                  }
+                }
+              ]
+            },
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "aggregatedDiscountInfoV3": {
+          "header": "50% OFF",
+          "subHeader": "UPTO ₹100"
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/rambharose-bhattad-ki-idli-new-malakpet-attapur-hyderabad-27456",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "info": {
+        "id": "118963",
+        "name": "Ambika Tiffin Centre",
+        "cloudinaryImageId": "opjcusdowqqqwqbdofxx",
+        "locality": "Attapur",
+        "areaName": "Gumma Konda Colony",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "South Indian"
+        ],
+        "avgRating": 4.6,
+        "parentId": "19676",
+        "avgRatingString": "4.6",
+        "totalRatingsString": "10K+",
+        "sla": {
+          "deliveryTime": 21,
+          "lastMileTravel": 2.7,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "2.7 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-13 22:15:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "v1695133679/badges/Pure_Veg111.png",
+              "description": "pureveg"
+            }
+          ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {
+              "badgeObject": [
+                {
+                  "attributes": {
+                    "description": "pureveg",
+                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                  }
+                }
+              ]
+            },
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "aggregatedDiscountInfoV3": {
+          "header": "10% OFF",
+          "subHeader": "UPTO ₹40"
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/ambika-tiffin-centre-attapur-gumma-konda-colony-hyderabad-118963",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "info": {
+        "id": "140111",
+        "name": "Imperial Multi-Cusine Restaurant",
+        "cloudinaryImageId": "yeednzto1jusnnhswke0",
+        "locality": "Tolichowki",
+        "areaName": "Tolichowki",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+          "Biryani",
+          "Chinese",
+          "Indian",
+          "Kebabs",
+          "Tandoor"
+        ],
+        "avgRating": 4.3,
+        "parentId": "19254",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "10K+",
+        "sla": {
+          "deliveryTime": 29,
+          "lastMileTravel": 4.9,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "4.9 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-13 23:59:00",
+          "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "aggregatedDiscountInfoV3": {
+          "header": "40% OFF",
+          "subHeader": "UPTO ₹80"
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/imperial-multi-cusine-restaurant-tolichowki-hyderabad-140111",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "info": {
+        "id": "214964",
+        "name": "Lingaiah Hotel",
+        "cloudinaryImageId": "b5xld90dyzhmhfca3eo0",
+        "locality": "Mallepally",
+        "areaName": "Asif Nagar",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "South Indian"
+        ],
+        "avgRating": 4.7,
+        "veg": true,
+        "parentId": "125253",
+        "avgRatingString": "4.7",
+        "totalRatingsString": "1K+",
+        "sla": {
+          "deliveryTime": 25,
+          "lastMileTravel": 3.5,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "3.5 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-13 14:00:00",
+          "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/lingaiah-hotel-mallepally-asif-nagar-hyderabad-214964",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "info": {
+        "id": "549128",
+        "name": "Yashodamma Tiffins",
+        "cloudinaryImageId": "ocjdo70bxancyrwv1wkd",
+        "locality": "Hyderguda",
+        "areaName": "Attapur",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+          "South Indian",
+          "Snacks"
+        ],
+        "avgRating": 4.2,
+        "veg": true,
+        "parentId": "330134",
+        "avgRatingString": "4.2",
+        "totalRatingsString": "1K+",
+        "sla": {
+          "deliveryTime": 24,
+          "lastMileTravel": 3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "3.0 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-13 23:00:00",
+          "opened": true
+        },
+        "badges": {
+          "imageBadges": [
+            {
+              "imageId": "v1695133679/badges/Pure_Veg111.png",
+              "description": "pureveg"
+            }
+          ]
+        },
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {
+              "badgeObject": [
+                {
+                  "attributes": {
+                    "description": "pureveg",
+                    "imageId": "v1695133679/badges/Pure_Veg111.png"
+                  }
+                }
+              ]
+            },
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/yashodamma-tiffins-hyderguda-attapur-hyderabad-549128",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    },
+    {
+      "info": {
+        "id": "645510",
+        "name": "Pallavi Tiffen Center",
+        "cloudinaryImageId": "d04ec80106c1ee4bf346b073012b5a50",
+        "locality": "HYDERGUDA",
+        "areaName": "ATTAPUR",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+          "South Indian"
+        ],
+        "avgRating": 4.4,
+        "veg": true,
+        "parentId": "389368",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "100+",
+        "sla": {
+          "deliveryTime": 24,
+          "lastMileTravel": 3,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "3.0 km",
+          "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+          "nextCloseTime": "2024-02-13 12:45:00",
+          "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "aggregatedDiscountInfoV2": {},
+        "type": "F",
+        "badgesV2": {
+          "entityBadges": {
+            "imageBased": {},
+            "textBased": {},
+            "textExtendedBadges": {}
+          }
+        },
+        "orderabilityCommunication": {
+          "title": {},
+          "subTitle": {},
+          "message": {},
+          "customIcon": {}
+        },
+        "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+            "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+            "lottie": {},
+            "video": {}
+          }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {}
+      },
+      "analytics": {
+        "context": "seo-data-b60e8fec-b35e-4379-96fe-27e922cf1839"
+      },
+      "cta": {
+        "link": "https://www.swiggy.com/restaurants/pallavi-tiffen-center-hyderguda-attapur-hyderabad-645510",
+        "text": "RESTAURANT_MENU",
+        "type": "WEBLINK"
+      },
+      "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+    }
+  ]

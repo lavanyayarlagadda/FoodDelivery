@@ -1,0 +1,33 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "learning react",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "lavanya"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavanyayarlagadda/repoReact.git"
+  },
+  "keywords": [],
+  "author": "lavanya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lavanyayarlagadda/repoReact/issues"
+  },
+  "homepage": "https://github.com/lavanyayarlagadda/repoReact#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1"
+  }
+}

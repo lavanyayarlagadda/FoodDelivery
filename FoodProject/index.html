@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css"></link>
+</head>
+<body>
+    <!-- <div id="root">
+<h1>Hello World </h1>
+    </div> -->
+    <div id="root"></div>
+<!-- for writing the javaScript code  -->
+    <!-- <script>
+
+const heading = document.createElement("h1");// For Writing / creating the what ever we want we need to write createHTML , so In this we need to write what ever the tag we want 
+// (for accessing root I need write this )
+heading.innerHTML = "Hello World....";// for Writing / printing anything  in te tag what ever we create 
+const root = document.getElementById("root");// for accessing the root for printing the data in between the div 
+root.appendChild(heading); //For put the text we need append this into prent in the root 
+    </script>  -->
+    <!-- for class instead of body 
+<div class="myClass"></div>
+<script
+const elementsWithClass = document.getElementsByClassName("myClass");
+
+ elementsWithClass is a collection of elements with the specified class
+If there's only one element with this class, you can access it like this:
+const element = elementsWithClass[0];
+Alternatively, you can use querySelector which is more versatile and can be used for both ids and classes:
+const element = document.querySelector(".myClass");
+This will give you the first element with the specified class.
+</script> -->
+<!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+
+<!-- //FOR Creating and the div by using react 
+//For creating the tag , And It has 3 arguments like tag,object,what ever we need to print ("tag",{},"what we need to render")
+//for class 
+// const heading = React.createElement("h1",{},"Hello World React");
+// //For creating the root and accessing the root 
+// const root = ReactDOM.createRoot(document.querySelector(".root"));
+// //For render Purpose / print 
+// root.render(heading);
+
+//  without using querySelector 
+// const rootElements = document.getElementsByClassName("root");
+// const root = ReactDOM.createRoot(rootElements[0]);
+//   root.render(heading);
+// For ID
+// const heading = React.createElement("h1",{},"Hello World React");
+//  //For creating the root and accessing the root 
+//  const root = ReactDOM.createRoot(document.getElementById("root"));
+//  //For render Purpose / print 
+//  root.render(heading); -->
+<script type="module" src='./src/App.js'></script>
+
+</body>
+</html>

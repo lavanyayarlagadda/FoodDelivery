@@ -7,41 +7,43 @@ import { useDispatch } from "react-redux";
 import { toggleMenu } from "../Utils/SideBarSlice";
 
 const Header = () => {
-
   const dispatch = useDispatch();
 
-const handleToggleMenu = ()=>{
-  dispatch(toggleMenu());
-}
+  const handleToggleMenu = () => {
+    dispatch(toggleMenu());
+  };
 
   return (
-    <div className="flex justify-between items-center p-6 shadow-md">
+    <div className="flex justify-between items-center p-4 shadow-md bg-white">
       {/* Menu and Logo */}
       <div className="flex items-center">
-        <img className="w-12 h-12 cursor-pointer" src={MenuIcon} alt="MenuIcon" onClick={()=>{
-          handleToggleMenu()
-        }} />
+        <img
+          className="w-8 h-8 cursor-pointer"
+          src={MenuIcon}
+          alt="MenuIcon"
+          onClick={handleToggleMenu}
+        />
         <div className="flex items-center ml-4">
-          <img className="w-12 h-12" src={YoutubeIcon} alt="YoutubeIcon" />
-          <h1 className="text-4xl font-bold text-black ml-2">YouTube</h1>
+          <img className="w-8 h-8" src={YoutubeIcon} alt="YoutubeIcon" />
+          <h1 className="text-2xl font-bold text-black ml-2">YouTube</h1>
         </div>
       </div>
 
-      {/*  Search bar */}
-      <div className="flex flex-grow mx-6">
+      {/* Search bar */}
+      <div className="flex flex-grow mx-6 max-w-2xl">
         <input
-          className="border border-gray-300 rounded-l-full w-[80%] px-4 py-2"
+          className="border border-gray-300 rounded-l-full w-full px-4 py-2 focus:outline-none focus:border-blue-500"
           type="text"
           placeholder="Search"
         />
-        <button className="flex items-center justify-center border border-gray-400 bg-gray-200 rounded-r-full px-4">
+        <button className="flex items-center justify-center border border-gray-300 bg-gray-100 rounded-r-full px-4 hover:bg-gray-200">
           <img className="w-6 h-6" src={SearchIcon} alt="SearchIcon" />
         </button>
       </div>
 
-      {/*  Profile icon */}
+      {/* Profile icon */}
       <div className="flex items-center">
-        <img className="w-12 h-12" src={ProfileIcon} alt="ProfileIcon" />
+        <img className="w-8 h-8 rounded-full" src={ProfileIcon} alt="ProfileIcon" />
       </div>
     </div>
   );

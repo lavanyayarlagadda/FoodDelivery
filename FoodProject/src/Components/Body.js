@@ -1,13 +1,11 @@
-import Restaurants from "./Crads";
-import Search from "./Search";
-import restData from "../utils/mock.json";
-import { useEffect, useState } from "react";
-import {Link} from 'react-router-dom'
+import React, { useEffect, useState } from "react";
+import Restaurants from "./Cards";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const [restaurantData, setRestaurantData] = useState([]);
-  const [serachText, setSearchText] = useState("");
-  const [filterSearch, setFilterSearch] = useState([]);
+  const [searchText, setSearchText] = useState("");
+  const [filteredSearch, setFilteredSearch] = useState([]);
 
   const fetchData = async () => {
     const response = await fetch(
@@ -16,96 +14,88 @@ const Body = () => {
     const data = await response.json();
     const mappedData =
       data?.data?.cards[4].card.card.gridElements.infoWithStyle.restaurants.map(
-        (item) => {
-          return item.info;
-        }
+        (item) => item.info
       );
     setRestaurantData(mappedData);
-    setFilterSearch(mappedData);
+    setFilteredSearch(mappedData);
   };
+
   useEffect(() => {
     fetchData();
   }, []);
+
+  const handleSearch = () => {
+    const searchFilter = restaurantData.filter((item) =>
+      item.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+    setFilteredSearch(searchFilter);
+  };
+
+  const handleTopRated = () => {
+    const filteredData = restaurantData.filter((item) => item.avgRating > 4);
+    setFilteredSearch(filteredData);
+  };
 
   return (
     <div>
       {restaurantData.length === 0 ? (
         <div className="shimmering">
-          <h1 className="shimmering-cards">
-            <h4 className="shimmer-name"></h4>
-          </h1>
-          <h1 className="shimmering-cards">
-            <h4 className="shimmer-name"></h4>
-          </h1>
-          <h1 className="shimmering-cards">
-            <h4 className="shimmer-name"></h4>
-          </h1>
-          <h1 className="shimmering-cards">
-            <h4 className="shimmer-name"></h4>
-          </h1>
-          <h1 className="shimmering-cards">
-            <h4 className="shimmer-name"></h4>
-          </h1>
-          <h1 className="shimmering-cards">
-            <h4 className="shimmer-name"></h4>
-          </h1>
-          <h1 className="shimmering-cards">
-            <h4 className="shimmer-name"></h4>
-          </h1>
-          <h1 className="shimmering-cards">
-            <h4 className="shimmer-name"></h4>
-          </h1>
-        </div>
+        <h1 className="shimmering-cards">
+          <h4 className="shimmer-name"></h4>
+        </h1>
+        <h1 className="shimmering-cards">
+          <h4 className="shimmer-name"></h4>
+        </h1>
+        <h1 className="shimmering-cards">
+          <h4 className="shimmer-name"></h4>
+        </h1>
+        <h1 className="shimmering-cards">
+          <h4 className="shimmer-name"></h4>
+        </h1>
+        <h1 className="shimmering-cards">
+          <h4 className="shimmer-name"></h4>
+        </h1>
+        <h1 className="shimmering-cards">
+          <h4 className="shimmer-name"></h4>
+        </h1>
+        <h1 className="shimmering-cards">
+          <h4 className="shimmer-name"></h4>
+        </h1>
+        <h1 className="shimmering-cards">
+          <h4 className="shimmer-name"></h4>
+        </h1>
+      </div>
       ) : (
         <div className="body">
           <div className="search">
             <input
               type="text"
-              onChange={(event) => {
-                setSearchText(event.target.value);
-                value = { serachText };
-              }}
+              value={searchText}
+              onChange={(e) => setSearchText(e.target.value)}
+              placeholder="Search restaurants"
             />
-            <button
-              className="search-button"
-              onClick={() => {
-                const searchFilter = restaurantData.filter((item) =>
-                  item.name.toLowerCase().includes(serachText.toLowerCase())
-                );
-                setFilterSearch(searchFilter);
-              }}
-            >
+            <button className="search-button" onClick={handleSearch}>
               Search
             </button>
           </div>
-
-          <button
-            className="button"
-            onClick={() => {
-              const filteredData = restaurantData.filter(
-                (item) => item.avgRating > 4
-              );
-              console.log(filteredData, "FILTERDATA");
-              setRestaurantData(filteredData);
-            }}
-          >
-            Top Rating Restaurants
+          <button className="button" onClick={handleTopRated}>
+            Top Rated Restaurants
           </button>
           <div className="restaurants-render">
-            {filterSearch.length > 0 &&
-              filterSearch.map((restaurants) => (
-                <Link
-                  key={restaurants?.id}
-                  to={`/restaurant/${restaurants?.id}`}
-                  class="custom-link"
-                >
-                  <Restaurants resData={restaurants} />
-                </Link>
-              ))}
+            {filteredSearch.map((restaurant) => (
+              <Link
+                key={restaurant.id}
+                to={`/restaurant/${restaurant.id}`}
+                className="custom-link"
+              >
+                <Restaurants resData={restaurant} />
+              </Link>
+            ))}
           </div>
         </div>
       )}
     </div>
   );
 };
+
 export default Body;

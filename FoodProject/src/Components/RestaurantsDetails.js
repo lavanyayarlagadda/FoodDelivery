@@ -6,27 +6,43 @@ const RestaurantsDetails = () => {
   const [resData, setResData] = useState(null);
 
   useEffect(() => {
-    fetchRestaurantData();
-  }, []);
+    const fetchRestaurantData = async () => {
+      try {
+        const originalUrl = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.37240&lng=78.43780&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`;
+        const apiUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(originalUrl)}`;
+        const response = await fetch(apiUrl);
+        const result = await response.json();
+        if (result && result.contents) {
+          const parsedData = JSON.parse(result.contents);
+          setResData(parsedData.data); 
+        }
+      } catch (error) {
+        console.error("Error fetching restaurant data:", error);
+      }
+    };
 
-  const fetchRestaurantData = async () => {
-    try {
-      const response = await fetch(
-        `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.37240&lng=78.43780&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`
-      );
-      const jsonData = await response.json();
-      setResData(jsonData.data);
-    } catch (error) {
-      console.error("Error fetching restaurant data:", error);
+    if (resId) {
+      fetchRestaurantData();
     }
-  };
+  }, [resId]);
 
   function stripHtmlTags(str) {
     const doc = new DOMParser().parseFromString(str, "text/html");
     return doc.body.textContent || "";
   }
 
-  if (resData === null) return <h1>No Data Available</h1>;
+  if (resData === null) return (
+    <div className="shimmerRestaurantDetails">
+      <div className="shimmer shimmerLargeText"></div>
+      <div className="shimmer shimmerText"></div>
+      <div className="shimmer shimmerCircle"></div>
+      <div className="shimmer shimmerText"></div>
+      <div className="shimmer shimmerText"></div>
+      <div className="shimmer shimmerText"></div>
+      <div className="shimmer shimmerLargeText"></div>
+    </div>
+  );
+  
 
   const { text } = resData?.cards[0]?.card?.card;
   const {

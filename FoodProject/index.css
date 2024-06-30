@@ -102,6 +102,7 @@
       background-position: 800px 0;
     }
   }
+  
   /* Header styling */
 .header {
     display: flex;
@@ -256,4 +257,44 @@
     color: #555;
     margin-bottom: 10px;
   }
+  .shimmerRestaurantDetails {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .shimmerRestaurantDetails .shimmer {
+    background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .shimmerRestaurantDetails .shimmerText {
+    height: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .shimmerRestaurantDetails .shimmerLargeText {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .shimmerRestaurantDetails .shimmerCircle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
   

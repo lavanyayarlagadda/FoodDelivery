@@ -16,16 +16,15 @@ const RestaurantsDetails = () => {
     const fetchRestaurantData = async () => {
       try {
         const originalUrl = `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.37240&lng=78.43780&restaurantId=${resId}&catalog_qa=undefined&submitAction=ENTER`;
-        // const apiUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(
-        //   originalUrl
-        // )}`;
-        const response = await fetch(originalUrl);
+        const apiUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(
+          originalUrl
+        )}`;
+        const response = await fetch(apiUrl);
         const result = await response.json();
-        // if (result?.contents) {
-        //   const parsedData = JSON.parse(result.contents);
-        //   setResData(parsedData.data);
-        // }
-        setResData(result?.data)
+        if (result?.contents) {
+          const parsedData = JSON.parse(result.contents);
+          setResData(parsedData.data);
+        }
       } catch (error) {
         console.error("Error fetching restaurant data:", error);
       }

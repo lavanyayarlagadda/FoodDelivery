@@ -2,12 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Components/Header";
 import Body from "./Components/Body";
-import { createBrowserRouter, RouterProvider,Outlet } from "react-router-dom";
-import App1 from "./App1";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import About from "./Components/About";
 import Error from "./Components/Error";
 import ContactUs from "./Components/ContactUs";
 import RestaurantsDetails from "./Components/RestaurantsDetails";
+import { Provider } from "react-redux";
+import store from "./Store";
+import Cart from "./Components/Cart";
 
 // This structure printed in the below in core react by using React.createElement
 /* <div id="parent">
@@ -74,10 +76,15 @@ const createRouter = createBrowserRouter([
       { path: "/", element: <Body /> },
       { path: "/aboutUs", element: <About /> },
       { path: "/contactUs", element: <ContactUs /> },
-      { path: "/restaurant/:resId", element: <RestaurantsDetails /> }
+      { path: "/restaurant/:resId", element: <RestaurantsDetails /> },
+      {path:"/cart",element:<Cart/>}
     ],
     errorElement: <Error />,
   },
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<RouterProvider router={createRouter} />);
+root.render(
+  <Provider store={store}>
+    <RouterProvider router={createRouter} />
+  </Provider>
+);

@@ -13,7 +13,7 @@ const Body = () => {
       const response = await fetch(apiUrl);
       const result = await response.json();
       console.log(result.contents,"CONTENTTEXT")
-        if (result && result.contents) {
+        if (result?.contents) {
         const data = JSON.parse(result.contents);
         console.log(data,"DATA")
         const mappedData =

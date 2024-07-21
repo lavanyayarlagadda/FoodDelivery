@@ -1,4 +1,7 @@
-/* Add this to your CSS file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .body {
     padding: 20px;
     background-color: #f8f9fa;
@@ -36,7 +39,7 @@
   .restaurants-render {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+
   }
   
   .restaurant-card {
@@ -144,7 +147,7 @@
     color: #ffd54f; /* Light yellow for hover effect */
   }
   
-  /* Optional: Responsive Design */
+  /*  Responsive Design */
   @media (max-width: 768px) {
     .header {
       flex-direction: column;
@@ -230,9 +233,8 @@
   }
   
   .menuList {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex;
+  flex-direction: column;
   }
   
   .menuItem {
@@ -240,6 +242,7 @@
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
   }
   
   .itemName {

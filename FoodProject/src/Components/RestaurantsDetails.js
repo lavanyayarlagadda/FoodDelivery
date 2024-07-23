@@ -3,10 +3,11 @@ import { useParams } from "react-router-dom";
 import { restaurantCrads_URL } from "../utils/utils";
 import downArrow from "../Icons/downArrow.svg";
 import upArrow from "../Icons/upArrow.svg";
-import { useDispatch } from "react-redux";
-import { addItem } from "../Slices/AddtoCartSlice";
+import { useDispatch,useSelector } from "react-redux";
+import { addItem, setCartItems, setCount } from "../Slices/AddtoCartSlice";
 
 const RestaurantsDetails = () => {
+  const { count,cartItems } = useSelector((store) => store.addToCart);
   const { resId } = useParams();
   const [resData, setResData] = useState(null);
   const [openCards, setOpenCards] = useState(null);
@@ -72,7 +73,12 @@ const RestaurantsDetails = () => {
   };
 
   const handleAddTocart = (item) => {
-    dispatch(addItem(item));
+    const itemId = item?.card?.info?.id;
+    if (!cartItems[itemId]) {
+      dispatch(addItem(item));
+    } else {
+      dispatch(setCartItems(itemId));
+    }
   };
   
 
@@ -152,7 +158,10 @@ const RestaurantsDetails = () => {
                   <>
                     <div className="menuList">
                       <div>
-                        {item?.card?.card?.itemCards?.map((item) => (
+                      {item?.card?.card?.itemCards?.map((item) => {
+                          const itemId = item?.card?.info?.id;
+                          const itemCount = cartItems[itemId]?.count || 0;
+                          return (
                           <div key={item?.card?.info?.id} className="menuItem">
                             <div className="flex gap-4">
                               <div>
@@ -189,12 +198,12 @@ const RestaurantsDetails = () => {
                                   className="bg-black rounded-lg text-white font-bold p-1 absolute -top-1 left-1"
                                   onClick={() => handleAddTocart(item)}
                                 >
-                                  ADD +
+                                 {itemCount > 0 ? `+ Add to Cart ${itemCount}` : "Add to Cart"}
                                 </button>
                               </div>
                             </div>
-                          </div>
-                        ))}
+                          </div>)
+           } )}
                       </div>
                     </div>
                     <div className="border-gray-400 border-[4px] my-6"></div>

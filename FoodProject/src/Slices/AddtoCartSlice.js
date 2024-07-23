@@ -36,6 +36,7 @@ const addtoCart = createSlice({
     },
     setCartItems: (state, action) => {
       const itemId = action.payload;
+      console.lo
       if (!state.cartItems[itemId]) {
         state.cartItems[itemId] = { count: 1 };
       } else {

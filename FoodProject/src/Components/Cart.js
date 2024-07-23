@@ -34,14 +34,15 @@ const Cart = () => {
               Clear Data
             </button>
           </div>
-        </div>
+        </div>{}
         {items.length===0 ? <div className="text-black font-bold text-center mt-6 text-2xl flex flex-col justify-center"> No items added to cart please Add </div>:        <div className="menuList">
           <div>
             {items?.map((item) => {
               const itemId = item?.card?.info?.id;
               const itemCount = cartItems[itemId]?.count || 0;
               return (
-              <div key={item?.card?.info?.id} className="menuItem">
+                <>
+            {itemCount!==0 && (              <div key={item?.card?.info?.id} className="menuItem">
                 <div className="flex gap-4">
                   <div>
                     <h3 className="itemName">{item?.card?.info?.name}</h3>
@@ -78,12 +79,14 @@ const Cart = () => {
                         className="pr-4"
                         onClick={() => handleAddTocart(item)}
                       >
-                        + {itemCount > 0 && itemCount}
+                        + {itemCount > 0 ? itemCount:0}
                       </button>
                     </div>
                   </div>
                 </div>
-              </div>)
+              </div>)}
+              </>
+            )
 })}
           </div>
         </div>}

@@ -1,20 +1,25 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { restaurantCrads_URL } from "../utils/utils";
-import { removeItem, addItem, clearItem } from "../Slices/AddtoCartSlice";
+import { removeItem, addItem, clearItems,setCartItems } from "../Slices/AddtoCartSlice";
 
 const Cart = () => {
-  const { items } = useSelector((store) => store.addToCart);
-  console.log(items, "ITEMSOFCART");
+  const { items,cartItems } = useSelector((store) => store.addToCart);
   const dispatch = useDispatch();
   const handleAddTocart = (item) => {
-    dispatch(addItem(item));
+    const itemId = item?.card?.info?.id;
+    if (!cartItems[itemId]) {
+      dispatch(addItem(item));
+    } else {
+      dispatch(setCartItems(itemId));
+    }
   };
   const handleRemoveItem = (item) => {
-    dispatch(removeItem(item));
+    const itemId = item?.card?.info?.id;
+    dispatch(removeItem(itemId));
   };
   const handleClearItem = () => {
-    dispatch(clearItem());
+    dispatch(clearItems());
   };
   return (
     <div>
@@ -32,7 +37,10 @@ const Cart = () => {
         </div>
         {items.length===0 ? <div className="text-black font-bold text-center mt-6 text-2xl flex flex-col justify-center"> No items added to cart please Add </div>:        <div className="menuList">
           <div>
-            {items?.map((item) => (
+            {items?.map((item) => {
+              const itemId = item?.card?.info?.id;
+              const itemCount = cartItems[itemId]?.count || 0;
+              return (
               <div key={item?.card?.info?.id} className="menuItem">
                 <div className="flex gap-4">
                   <div>
@@ -66,19 +74,17 @@ const Cart = () => {
                       >
                         -
                       </button>
-
-                      <p>ADD</p>
                       <button
                         className="pr-4"
                         onClick={() => handleAddTocart(item)}
                       >
-                        +
+                        + {itemCount > 0 && itemCount}
                       </button>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              </div>)
+})}
           </div>
         </div>}
 
